@@ -2,6 +2,7 @@
 
 * {
     --hibiscus-love: #008744;
+    --hibiscus-eror: red;
     --fine-ii: #f9b198;
     --afl: #fac8af;
     --mexican-sky: #cfdddd;
@@ -16,7 +17,7 @@
     --bg-color: var(--mexican-sky);
     --text-color: var(--free);
     --header-color: var(--captured);
-    --error-color: var(--hibiscus-love);
+    --error-color: var(--hibiscus-eror);
     --success-color: #73d12e;
   
     box-sizing: border-box;
