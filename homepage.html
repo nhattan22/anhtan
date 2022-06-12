@@ -115,12 +115,19 @@
                         <span class="product_item__title">Sân bóng đá cây trâm</span>
                         <div class="product_item__vote">
                             <span class="product_item__vote_num">Số người: 5</span>
-                            <div class="product_item__rating">
+                            <!-- <div class="product_item__rating">
                                 <i class=" product_item__star_active fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
+                            </div> -->
+                            <div class="star star__pagelistgame" starcomment="">
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
                             </div>
                         </div>
                         <div class="product_item__price">Giá <span class="product_item__price_color">200.000đ - 400.000đ</span> / Trận</div>
@@ -134,12 +141,12 @@
                         <span class="product_item__title">Sân bóng đá cây trâm</span>
                         <div class="product_item__vote">
                             <span class="product_item__vote_num">Số người: 5</span>
-                            <div class="product_item__rating">
-                                <i class=" product_item__star_active fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="star star__pagelistgame" starcomment="">
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
                             </div>
                         </div>
                         <div class="product_item__price">Giá <span class="product_item__price_color">200.000đ - 400.000đ</span> / Trận</div>
@@ -153,12 +160,12 @@
                         <span class="product_item__title">Sân bóng đá cây trâm</span>
                         <div class="product_item__vote">
                             <span class="product_item__vote_num">Số người: 5</span>
-                            <div class="product_item__rating">
-                                <i class=" product_item__star_active fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="star star__pagelistgame" starcomment="">
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
                             </div>
                         </div>
                         <div class="product_item__price">Giá <span class="product_item__price_color">200.000đ - 400.000đ</span> / Trận</div>
@@ -172,12 +179,12 @@
                         <span class="product_item__title">Sân bóng đá cây trâm</span>
                         <div class="product_item__vote">
                             <span class="product_item__vote_num">Số người: 5</span>
-                            <div class="product_item__rating">
-                                <i class=" product_item__star_active fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="star star__pagelistgame" starcomment="">
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
                             </div>
                         </div>
                         <div class="product_item__price">Giá <span class="product_item__price_color">200.000đ - 400.000đ</span> / Trận</div>
@@ -191,12 +198,12 @@
                         <span class="product_item__title">Sân bóng đá cây trâm</span>
                         <div class="product_item__vote">
                             <span class="product_item__vote_num">Số người: 5</span>
-                            <div class="product_item__rating">
-                                <i class=" product_item__star_active fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="star star__pagelistgame" starcomment="">
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
+                                <span><i class='bx bx-star'></i></span>
                             </div>
                         </div>
                         <div class="product_item__price">Giá <span class="product_item__price_color">200.000đ - 400.000đ</span> / Trận</div>
@@ -279,6 +286,23 @@
 
 
 <script>
+
+// rating star
+
+const data_total_comment = document.getElementsByClassName('star');
+  for (let j = 0; j < data_total_comment.length; j++) {
+    const star_total_comment = data_total_comment[j].getAttribute('starcomment');
+    for (let i = 0; i < data_total_comment[j].childNodes.length; i++) {
+      if (i == star_total_comment * 2) break;
+      if (data_total_comment[j].hasChildNodes('span')) {
+        if (data_total_comment[j].childNodes[i].childNodes.length !== 0) {
+          data_total_comment[j].childNodes[i].childNodes[0].classList.add('bxs-star');
+        }
+      }
+    }
+  }
+
+// hếtrating star
 
     /*banner slide*/
     var swiper = new Swiper(".swiper_banner", {

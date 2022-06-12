@@ -208,6 +208,8 @@ i {
     color: #10f053;
     font-size: 25px;
 }
+
+
 /*hết header*/
 /*navbar*/
 .navbar {
@@ -381,6 +383,31 @@ i {
     transform: translateY(-2px);
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
 }
+
+/* star */
+
+.star__pagelistgame {
+    padding: 5px;
+}
+
+.star .bx {
+    font-size: 15px;
+    color: #efef4c;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.star__active .bxs-like,
+.bxs-dislike {
+    cursor: pointer;
+}
+
+.bxs-star {
+    color: #dbdb1c !important;
+}
+
 /*hết product sân bóng đá*/
 /* pagination */
 .home-product__pagination {
