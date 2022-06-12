@@ -74,10 +74,10 @@
     flex-direction: column;
     gap: 20px;
     position: absolute;
-    top: 70px;
+    top: 128px;
     width: 632px;
     right: 20px;
-    background-color: #181818;
+    background-color: #FFFFFF;
     border: 1px solid white;
     padding-top: 40px;
     padding: 30px 20px;
@@ -106,16 +106,16 @@
     position: sticky;
     display: flex;
     justify-content: space-between;
-    font-family: 'Baloo 2';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 40px;
-    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6B6B6B;
 }
 
 .keyword__search p {
-    font-family: 'Baloo 2';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 38px;
@@ -300,8 +300,8 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 20px 20px;
-    width: 100%;
+    padding: 20px 0 20px 20px;
+    /* width: 100%; */
 }
 
 .product_item {
@@ -421,6 +421,56 @@ i {
     border-radius: 2px;
 }
 /* hết pagination */
+
+/* footer */
+.footer {
+    background-image: linear-gradient(270deg,rgba(241,243,246,0) 0,#f1f3f6 29.69%),url(../images/footer/1.jpg);
+    background-repeat: no-repeat;
+    background-position: -20vw top,right top;
+    background-size: contain;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer_desc,
+.footer_map {
+    width: calc(100% / 2);
+}
+
+.footer_map__link {
+    min-height: 200px;
+    /* margin-top: 50px; */
+    padding-top: 50px;
+    display: block;
+    height: 100%;
+    cursor: pointer;
+}
+
+.footer_desc__address,
+.footer_desc__email {
+    display: flex;
+    align-items: center;
+}
+
+.footer_desc__address_title,
+.footer_desc__email_title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.footer_desc__email_title {
+    text-decoration: none;
+    color: #226A35;
+}
+
+/* hết footer */
 
 @media (max-width:1366px) {
     .product_item__list {
