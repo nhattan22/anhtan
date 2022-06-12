@@ -7,6 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
     <link rel="stylesheet" href="./assets/css/regisster2.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,52 +16,122 @@
 </head>
 <body>
     <div class="container">
-        <form id="form" class="form">
-            <h2>Đăng ký</h2>
-            <div class="form-control">
-                <div class="form_control__custom">
-                    <label for="username">Họ tên <span class="require">*</span></label>
-                    <input type="text" id="username" placeholder="Nhập họ tên" autocomplete="off" >
+        <div class="header">
+            <div class="header_top">
+                <div class="header_top__left">
+                    <div class="header_top__left__hotline">
+                        <div class="header_top__left__hotline_icon">
+                            <box-icon name='phone' type='solid' color='#ffffff' ></box-icon>
+                        </div>
+                        <span class="header_top__left__hotline_title">Showroom</span>
+                        <div class="header_top__left__hotline_phone">0123456789</div>
+                    </div>
+                    <div class="header_top__left__hotline_tech">
+                        <div class="header_top__left__hotline_tech_icon">
+                            <box-icon type='solid' name='brightness' color='#ffffff' ></box-icon>
+                        </div>
+                        <span class="header_top__left__hotline_tech_title">Kĩ thuật</span>
+                        <div class="header_top__left__hotline_tech_phone">0123456789</div>
+                    </div>
                 </div>
-                <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <div class="form_control__custom">
-                    <label for="email">Email <span class="require">*</span></label>
-                    <input type="text" id="email" placeholder="Nhập email" autocomplete="off" >
+                <div class="header_top__right">
+                    <div class="header_top__right__login">
+                        <a href="">Đăng Nhập</a>
+                    </div>
+                    <div class="header_top__right__register">
+                        <a href="./register2.html">Đăng Ký</a>
+                    </div>
                 </div>
-                <small>Error Message</small>
             </div>
-            <div class="form-control">
-                <div class="form_control__custom">
-                    <label for="phone">Số điện thoại <span class="require">*</span></label>
-                    <input type="text" id="email" placeholder="Nhập số điện thoại" autocomplete="off" >
+            <div class="header_center">
+                <div class="header_center__logo">
+                    <img  src="./assets/images/logo.png" alt="logo"/>
                 </div>
-                <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <div class="form_control__custom">
-                    <label for="password">Password <span class="require">*</span></label>
-                    <input type="password" id="password" placeholder="Nhập password" autocomplete="off" >
+                <div class="header_center__search">
+                    <form action="" class="search search-pc" id="submitSearch" onsubmit="return validateMyForm()">
+                        <div class="form__group">
+                            <button style="padding: 0; border:none" id="btn__submit" disabled="disabled">
+                                <i id="find" class='bx bx-search' onclick="handleSubmit()"></i>
+                            </button>
+                            <input type="text" name="key" class="inp" placeholder="Sản phẩm cần tìm" id="filter_search" autocomplete="off">
+                        </div>
+                        <div id="keyword__search" class="keyword__search">
+                            <div class="seeAll__search">
+                                <div>Tìm kiếm gần đây</div>
+                            </div>
+                            <div id="showKeyWord"></div>
+                        </div>
+                    </form>
                 </div>
-                <small>Error Message</small>
             </div>
-            <div class="form-control">
-                <div class="form_control__custom">
-                    <label for="password2">Xác nhận Password <span class="require">*</span></label>
-                    <input type="password" id="password2" placeholder="Nhập password lại" autocomplete="off" >
+        </div>
+        <div class="container_register">
+            <form id="form" class="form">
+                <h2>Đăng ký</h2>
+                <div class="form-control">
+                    <div class="form_control__custom">
+                        <label for="username">Họ tên <span class="require">*</span></label>
+                        <input type="text" id="username" placeholder="Nhập họ tên" autocomplete="off" >
+                    </div>
+                    <small>Error Message</small>
                 </div>
-                <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <div class="form_control__custom">
-                    <label for="address">Địa chỉ</label>
-                    <input type="text" id="address" placeholder="Nhập địa chỉ" autocomplete="off" >
+                <div class="form-control">
+                    <div class="form_control__custom">
+                        <label for="email">Email <span class="require">*</span></label>
+                        <input type="text" id="email" placeholder="Nhập email" autocomplete="off" >
+                    </div>
+                    <small>Error Message</small>
                 </div>
-                <small>Error Message</small>
+                <div class="form-control">
+                    <div class="form_control__custom">
+                        <label for="phone">Số điện thoại <span class="require">*</span></label>
+                        <input type="text" id="email" placeholder="Nhập số điện thoại" autocomplete="off" >
+                    </div>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <div class="form_control__custom">
+                        <label for="password">Password <span class="require">*</span></label>
+                        <input type="password" id="password" placeholder="Nhập password" autocomplete="off" >
+                    </div>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <div class="form_control__custom">
+                        <label for="password2">Xác nhận Password <span class="require">*</span></label>
+                        <input type="password" id="password2" placeholder="Nhập password lại" autocomplete="off" >
+                    </div>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <div class="form_control__custom">
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" id="address" placeholder="Nhập địa chỉ" autocomplete="off" >
+                    </div>
+                    <small>Error Message</small>
+                </div>
+                <button>Đăng ký</button>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer_desc">
+                <div class="footer_desc__address">
+                    <div class="footer_dess__address_icon">
+                        <box-icon name='location-plus' animation='tada' ></box-icon>
+                    </div>
+                    <span class="footer_desc__address_title">A1L2-08, 2th floor Ecolife Capitol, 58 To Huu, Trung Van</span>
+                </div>
+                <div class="footer_desc__email">
+                    <div class="footer_dess__email_icon">
+                        <box-icon name='mail-send' animation='tada' ></box-icon>
+                    </div>
+                    <a class="footer_desc__email_title" href="mailto:nhattan97.work@gmail.com">welcome@bravebits.co</a>
+                </div>
             </div>
-            <button>Đăng ký</button>
-        </form>
+            <div class="footer_map">
+                <a target="_blank" href="https://www.google.com/maps/place/97+%C4%90.+Man+Thi%E1%BB%87n,+Hi%E1%BB%87p+Ph%C3%BA,+Qu%E1%BA%ADn+9,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.8486428,106.7835031,17z/data=!3m1!4b1!4m5!3m4!1s0x31752713216a3adf:0xf8b22853eea72777!8m2!3d10.8486375!4d106.7856918?hl=vi-VN" class="footer_map__link"></a>
+            </div>
+        </div>
     </div>
 </body>
 
