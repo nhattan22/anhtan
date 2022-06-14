@@ -340,7 +340,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
 }
 
 .product_item__link {
@@ -499,7 +499,13 @@ i {
 
 /* hết footer */
 
-@media (max-width:1366px) {
+@media (max-width:1800px) {
+    .product_item__list {
+        width: calc(100% / 4);
+    }
+}
+
+@media (max-width:1536px) {
     .product_item__list {
         width: calc(100% / 3);
     }
