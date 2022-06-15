@@ -128,7 +128,7 @@
     justify-content: center;
     align-items: center;
     background-color: #EF4E22;
-    padding: 20px 10px;
+    padding: 20px 0;
     width: 80%;
 }
 
@@ -173,4 +173,74 @@
     font-weight: 400;
     font-size: 16px;
     color: #333;
+}
+
+.img_zalo {
+    width: 15px;
+    height: 15px;
+}
+
+.contact_social {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.contact_social_logo {
+    display: flex;
+    align-items: center;
+}
+
+.contact_social_logo {
+    height: 40px;
+}
+
+.contact_social__zalo {
+    border: 1px solid #0180c6;
+    color: #0180c6;
+    text-decoration: none;
+}
+
+.contact_social__fb {
+    text-decoration: none;
+    border: 1px solid #3b5898;
+    color: #3b5898;
+    margin: 20px 0;
+}
+
+.contact_social__phone {
+    text-decoration: none;
+    border: 1px solid #498D3D;
+    color: #498D3D;
+}
+
+.contact_social_logo__img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zalo_title,
+.fb_title,
+.phone_number {
+    width: calc(100% - 40px);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_social__zalo .contact_social_logo__img {
+    background-color: #0180c6;
+}
+
+.contact_social__fb .contact_social_logo__img {
+    background-color: #3b5898;
+}
+
+.contact_social__phone .contact_social_logo__img {
+    background-color: #498D3D;
 }
