@@ -165,6 +165,7 @@
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .advise_form__input::placeholder {
@@ -243,4 +244,28 @@
 
 .contact_social__phone .contact_social_logo__img {
     background-color: #498D3D;
+}
+
+/* star */
+
+.star__pagelistgame {
+    padding: 5px;
+}
+
+.star .bx {
+    font-size: 15px;
+    color: #efef4c;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.star__active .bxs-like,
+.bxs-dislike {
+    cursor: pointer;
+}
+
+.bxs-star {
+    color: #dbdb1c !important;
 }

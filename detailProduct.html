@@ -87,7 +87,7 @@
                 <div class="swiper_detail">
                     <div
                         style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                        class="swiper mySwiper2"
+                        class="swiper mySwiper2 slider-one"
                     >
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -106,7 +106,7 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <div thumbsSlider="" class="swiper mySwiper">
+                    <div thumbsSlider="" class="swiper mySwiper slider-two">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="./assets/images/banner/1.jpg" />
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                     <div class="contact_social">
-                        <a class="contact_social__zalo" href="">
+                        <!-- <a class="contact_social__zalo" href="">
                             <span class="contact_social_logo">
                                 <div class="contact_social_logo__img">
                                     <img class="img_zalo" src="./assets/images/logo_social/zalo_logo.jpg" alt="">
@@ -156,7 +156,7 @@
                                     <span class="contact_social_title">Đặt qua Facbook</span>
                                 </div>
                             </span>
-                        </a>
+                        </a> -->
                         <a class="contact_social__phone" href="">
                             <span class="contact_social_logo">
                                 <div class="contact_social_logo__img">
@@ -167,6 +167,19 @@
                                 </div>
                             </span>
                         </a>
+                    </div>
+                </div>
+                <div class="detail_desc">
+                    <span class="detail_desc__title">Sân bóng CLB Bóng Đá Quang Tuyến</span>
+                    <div class="rating">
+                        <div class="star star__pagelistgame" starcomment="">
+                            <span><i class='bx bx-star'></i></span>
+                            <span><i class='bx bx-star'></i></span>
+                            <span><i class='bx bx-star'></i></span>
+                            <span><i class='bx bx-star'></i></span>
+                            <span><i class='bx bx-star'></i></span>
+                        </div>
+                        <a href="">(1 đánh giá)</a>
                     </div>
                 </div>
             </div>
@@ -200,12 +213,14 @@
  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
  <script>
+
+    //  swiper
     var swiper = new Swiper(".mySwiper", {
       loop: true,
       spaceBetween: 60,
       slidesPerView: 3,
       effect: 'coverflow',
-    //   freeMode: true,
+      freeMode: true,
       centeredSlides: true,
       watchSlidesProgress: true,
       coverflowEffect: {
@@ -225,5 +240,26 @@
         swiper: swiper,
       },
     });
+
+    swiper2.controller.control = sliderTwo;
+    swiper.controller.control = sliderOne;
+
+    // hết swiper
+    // rating star
+
+    const data_total_comment = document.getElementsByClassName('star');
+    for (let j = 0; j < data_total_comment.length; j++) {
+        const star_total_comment = data_total_comment[j].getAttribute('starcomment');
+        for (let i = 0; i < data_total_comment[j].childNodes.length; i++) {
+        if (i == star_total_comment * 2) break;
+        if (data_total_comment[j].hasChildNodes('span')) {
+            if (data_total_comment[j].childNodes[i].childNodes.length !== 0) {
+            data_total_comment[j].childNodes[i].childNodes[0].classList.add('bxs-star');
+            }
+        }
+        }
+    }
+
+// hếtrating star
   </script>
 </html>
