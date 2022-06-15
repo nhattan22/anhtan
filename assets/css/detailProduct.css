@@ -111,6 +111,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .contact_us__title {
@@ -176,6 +177,11 @@
     color: #333;
 }
 
+.advise_form__btn:hover {
+    background: #DF0909;
+    color: #FFF;
+}
+
 .img_zalo {
     width: 15px;
     height: 15px;
@@ -214,6 +220,13 @@
     text-decoration: none;
     border: 1px solid #498D3D;
     color: #498D3D;
+    margin-bottom: 20px;
+}
+
+.contact_social__search {
+    text-decoration: none;
+    border: 1px solid #28a99a;
+    color: #28a99a;
 }
 
 .contact_social_logo__img {
@@ -226,7 +239,8 @@
 
 .zalo_title,
 .fb_title,
-.phone_number {
+.phone_number,
+.search_title {
     width: calc(100% - 40px);
     height: 40px;
     display: flex;
@@ -245,6 +259,16 @@
 .contact_social__phone .contact_social_logo__img {
     background-color: #498D3D;
 }
+
+.contact_social__search .contact_social_logo__img {
+    background-color: #28A99A;
+}
+
+.contact_social__phone:hover,
+.contact_social__search:hover {
+    border: 1px solid red !important;
+}
+
 
 /* star */
 
@@ -268,4 +292,62 @@
 
 .bxs-star {
     color: #dbdb1c !important;
+}
+
+
+.detail_desc__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: #000;
+}
+
+.detail_desc__address {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.detail_adress__city {
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.detail_intro {
+    text-decoration: none;
+}
+
+.detail_intro__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #498D3D;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width:1366px) {
+    .advise_form__input {
+        width: 270px;
+    }
 }
