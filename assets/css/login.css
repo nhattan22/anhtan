@@ -21,23 +21,6 @@ body{
     margin: 0;
 }
 
-.login_google {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-    background-color: #DD4B39;
-    border: 2px solid #DD4B39;
-    border-radius: 4px;
-    color: #fff;
-    display: block;
-    padding: 10px;
-    font-size: 16px;
-    margin-top:20px;
-    width:100%;
-}
-
 .container_login{
     background-color: #fff;
     border-radius: 5px;
@@ -112,12 +95,57 @@ h2{
     display: block;
     padding: 10px;
     font-size: 16px;
-    margin-top:20px;
-    width:100%;
+    margin:20px auto 0;
+    width:50%;
 }
 
-.login_google__icon {
-    padding-right: 10px;
+.login_google__zalo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_google,
+.login_zalo {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    margin-top:20px;
+    width:48%;
+}
+
+.login_google {
+    background-color: #DD4B39;
+    border: 2px solid #DD4B39;
+}
+
+.login_zalo {
+    background-color: #0180C7;
+    border: 2px solid #0180C7;
+}
+
+.login_zalo__icon {
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.login_zalo__icon img {
+    width: 15px;
+    height: 15px;
+}
+
+.login_google__icon,
+.login_zalo__icon {
+    margin-right: 10px;
 }
 
 .forgot_password {
@@ -156,11 +184,11 @@ h2{
   border-radius: 4px;
 }
 
-.login_google {
+.login_google__zalo {
     position: relative;
 }
 
-.login_google::after {
+.login_google__zalo::after {
   content: "";
   position: absolute;
   top: 0;

@@ -170,10 +170,17 @@
  <script>
     var swiper = new Swiper(".mySwiper", {
       loop: true,
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
+      spaceBetween: 60,
+      slidesPerView: 3,
+      effect: 'coverflow',
+    //   freeMode: true,
+      centeredSlides: true,
       watchSlidesProgress: true,
+      coverflowEffect: {
+        rotate: -10,
+        stretch: 20,
+        depth: 40,
+        },
     });
     var swiper2 = new Swiper(".mySwiper2", {
       loop: true,

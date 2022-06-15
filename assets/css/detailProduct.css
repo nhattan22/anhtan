@@ -119,6 +119,7 @@
     font-size: 22px;
     color: #333;
     line-height: 30px;
+    margin-bottom: 20px;
 }
 
 .advise {
@@ -127,7 +128,7 @@
     justify-content: center;
     align-items: center;
     background-color: #EF4E22;
-    padding: 10px 10px;
+    padding: 20px 10px;
     width: 80%;
 }
 
@@ -137,8 +138,39 @@
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .advise_form__input {
     outline: none;
+    border: none;
+    width: 370px;
+    height: 20px;
+    padding: 10px;
+}
+
+.advise_form__inputbtn {
+    display: flex;
+    align-items: center;
+}
+
+.advise_form__btn {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 60px;
+    background-color: #226A35;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.advise_form__input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
 }
