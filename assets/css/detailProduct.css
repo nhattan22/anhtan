@@ -393,7 +393,7 @@ p, h2 {
 .desc__title,
 .tienich,
 .desc_price {
-    font-size: 30px;
+    font-size: 24px;
     color: black;
 }
 
@@ -421,7 +421,7 @@ p, h2 {
 .detail_desc_us {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-size: 24px;
+    font-size: 20px;
     color: #000;
 
 }
@@ -772,6 +772,7 @@ p, h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     line-height: 16px;
+    font-size: 15px;
     letter-spacing: 1.5px;
     word-break: break-word;
 }
@@ -786,7 +787,7 @@ p, h2 {
 
 .title__comment__user {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 18px;
     padding: 15px 0;
 }
 
