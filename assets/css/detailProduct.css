@@ -823,14 +823,20 @@ p, h2 {
 }
 
 /* show giới thiệu */
+.title__viewall__buynow {
+    display: flex;
+    align-items: center;
+}
+
 .title__viewall__buynow i {
     margin-top: unset;
     transition: all 1s ease-in-out;
     z-index: 99999;
+    font-size: 40px;
 }
 
 .rotate_icon {
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
     transition: all 1s ease-in-out;
 }
 
