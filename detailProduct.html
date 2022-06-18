@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
 </head>
 <body>
     <div class="wrap">
@@ -83,126 +84,294 @@
                     </div>
                     <span class="detail_list__item">Gò Vấp</span>
             </div>
-            <div class="detail_container">
-                <div class="swiper_detail">
-                    <div
-                        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                        class="swiper mySwiper2 slider-one"
-                    >
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./assets/images/banner/1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/banner/2.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/banner/3.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/banner/4.jpg" />
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                    <div thumbsSlider="" class="swiper mySwiper slider-two">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./assets/images/banner/1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/banner/2.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/banner/3.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/images/banner/4.jpg" />
+            <div class="detail_top">
+                <div class="detail_container">
+                    <div class="swiper_detail">
+                        <div
+                            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2 slider-one"
+                        >
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/banner/1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/banner/2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/banner/3.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/banner/4.jpg" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="contact_us">
-                    <span class="contact_us__title">Đặt sân qua các kênh sau</span>
-                    <div class="advise">
-                        <span class="advise_title">TƯ VẤN MIỄN PHÍ</span>
-                        <div class="advise_form">
-                            <form action="">
-                                <div class="advise_form__inputbtn">
-                                    <input class="advise_form__input" type="text" placeholder="Để số điện thoại chúng tôi gọi">
-                                    <button class="advise_form__btn">Gửi</button>
+                        <div thumbsSlider="" class="swiper mySwiper slider-two">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/banner/1.jpg" />
                                 </div>
-                            </form>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/banner/2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/banner/3.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/banner/4.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
-                    <div class="contact_social">
-                        <!-- <a class="contact_social__zalo" href="">
-                            <span class="contact_social_logo">
-                                <div class="contact_social_logo__img">
-                                    <img class="img_zalo" src="./assets/images/logo_social/zalo_logo.jpg" alt="">
+                    <div class="contact_us">
+                        <span class="contact_us__title">Đặt sân qua các kênh sau</span>
+                        <div class="advise">
+                            <span class="advise_title">TƯ VẤN MIỄN PHÍ</span>
+                            <div class="advise_form">
+                                <form action="">
+                                    <div class="advise_form__inputbtn">
+                                        <input class="advise_form__input" type="text" placeholder="Để số điện thoại chúng tôi gọi">
+                                        <button class="advise_form__btn">Gửi</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="contact_social">
+                            <!-- <a class="contact_social__zalo" href="">
+                                <span class="contact_social_logo">
+                                    <div class="contact_social_logo__img">
+                                        <img class="img_zalo" src="./assets/images/logo_social/zalo_logo.jpg" alt="">
+                                    </div>
+                                    <div class="zalo_title">
+                                        <span class="contact_social_title">Đặt qua Zalo</span>
+                                    </div>
+                                </span>
+                            </a>
+                            <a class="contact_social__fb" href="">
+                                <span class="contact_social_logo">
+                                    <div class="contact_social_logo__img">
+                                        <box-icon name='facebook' type='logo' ></box-icon>
+                                    </div>
+                                    <div class="fb_title">
+                                        <span class="contact_social_title">Đặt qua Facbook</span>
+                                    </div>
+                                </span>
+                            </a> -->
+                            <a class="contact_social__phone" href="">
+                                <span class="contact_social_logo">
+                                    <div class="contact_social_logo__img">
+                                        <box-icon name='phone-call'></box-icon>
+                                    </div>
+                                    <div class="phone_number">
+                                        <span class="contact_social_title">0123456789</span>
+                                    </div>
+                                </span>
+                            </a>
+                            <div class="detail_find" id="find_hour">
+                                <span class="detail_find_hour">Tìm giờ trống</span>
+                                <div class="detail_find_total">
+                                    <div class="detail_find_list">
+                                        <div class="detail_find_from">
+                                            <span>Tìm từ giờ:</span>
+                                            <input type="time" placeholder="Tìm từ giờ">
+                                        </div>
+                                        <div class="detail_find_to">
+                                            <span>Đến giờ:</span>
+                                            <input type="time" placeholder="Tìm từ giờ">
+                                        </div>
+                                    </div>
+                                    <button>Tìm sân</button>
                                 </div>
-                                <div class="zalo_title">
-                                    <span class="contact_social_title">Đặt qua Zalo</span>
-                                </div>
-                            </span>
-                        </a>
-                        <a class="contact_social__fb" href="">
-                            <span class="contact_social_logo">
-                                <div class="contact_social_logo__img">
-                                    <box-icon name='facebook' type='logo' ></box-icon>
-                                </div>
-                                <div class="fb_title">
-                                    <span class="contact_social_title">Đặt qua Facbook</span>
-                                </div>
-                            </span>
-                        </a> -->
-                        <a class="contact_social__phone" href="">
-                            <span class="contact_social_logo">
-                                <div class="contact_social_logo__img">
-                                    <box-icon name='phone-call'></box-icon>
-                                </div>
-                                <div class="phone_number">
-                                    <span class="contact_social_title">0123456789</span>
-                                </div>
-                            </span>
-                        </a>
-                        <a class="contact_social__search" href="">
-                            <span class="contact_social_logo">
-                                <div class="contact_social_logo__img">
-                                    <box-icon name='search'></box-icon>
-                                </div>
-                                <div class="search_title">
-                                    <span class="contact_social_title">Tìm giờ trống</span>
-                                </div>
-                            </span>
-                        </a>
+                            </div>
+                            <!-- <a class="contact_social__search" href="#find_hour">
+                                <span class="contact_social_logo">
+                                    <div class="contact_social_logo__img">
+                                        <box-icon name='search'></box-icon>
+                                    </div>
+                                    <div class="search_title">
+                                        <span class="contact_social_title">Tìm giờ trống</span>
+                                    </div>
+                                </span>
+                            </a> -->
+                        </div>
                     </div>
+                    
                 </div>
                 <div class="detail_desc">
-                    <div class="detail_desc__left">
-                        <span class="detail_desc__title">Sân bóng CLB Bóng Đá Quang Tuyến</span>
-                        <div class="rating">
-                            <div class="star star__pagelistgame" starcomment="">
-                                <span><i class='bx bx-star'></i></span>
-                                <span><i class='bx bx-star'></i></span>
-                                <span><i class='bx bx-star'></i></span>
-                                <span><i class='bx bx-star'></i></span>
-                                <span><i class='bx bx-star'></i></span>
+                    <div class="custom_detail">
+                        <div class="detail_desc__left">
+                            <span class="detail_desc__title">Sân bóng CLB Bóng Đá Quang Tuyến</span>
+                            <div class="rating">
+                                <div class="star star__pagelistgame" starcomment="">
+                                    <span><i class='bx bx-star'></i></span>
+                                    <span><i class='bx bx-star'></i></span>
+                                    <span><i class='bx bx-star'></i></span>
+                                    <span><i class='bx bx-star'></i></span>
+                                    <span><i class='bx bx-star'></i></span>
+                                </div>
+                                <a href="">(1 đánh giá)</a>
                             </div>
-                            <a href="">(1 đánh giá)</a>
-                        </div>
-                        <div class="detail_desc__address">
-                            <div class="detail_address__icon">
-                                <i class="fa-solid fa-location-dot"></i>
+                            <div class="detail_desc__address">
+                                <div class="detail_address__icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="detail_adress__city">Hồ Chí Minh</div>
                             </div>
-                            <div class="detail_adress__city">Hồ Chí Minh</div>
+                            <div class="title__viewall__buynow">
+                              <span class="detail_intro__title">Giới thiệu</span>
+                              <i class="bx bx-chevron-down rotate_icon " id="icon__show"></i>
+                            </div>
+                            <div class="viewall__buynow show__viewall__buynow left_right__custom">
+                              <div class="desc_list__item">
+                                  <span class="desc__title">Sân bóng CLB Bóng Đá Quang Tuyến</span>
+                                  <span class="desc__content">Sân bóng CLB Bóng Đá Quang Tuyến 3 được đầu tư xây dựng gồm 1 sân đơn 5 người đá, với kích thước sân 20x40m.</span>
+                                  <span class="desc__content">Được đầu tư khai thác một thời gian dài nên mặt sân bóng Quang Tuyến 3 có dấu hiệu xuống cấp, mặt cỏ xước và gãy ngọn nhiều. Hệ thống đèn chiếu còn tốt. Sân sẽ tuyệt vời hơn khi được nâng cấp và cải thiện phần mặt cỏ. Tuy nhiên với giá thuê sân rẻ và không gian thoáng mát nên sân vẫn là địa điểm yêu thích của nhiều phủi thủ.</span>
+                                  <span class="tienich">Một số tiện ích của sân bóng</span>
+                                  <ul class="desc__tienich">
+                                      <li>Có Wifi miễn phí</li>
+                                      <li>Đèn chiếu sáng ban đêm</li>
+                                      <li>Bãi để xe máy</li>
+                                      <li>Có dịch vụ cho thuê giày, bóng, đồ thi đấu khác</li>
+                                  </ul>
+                                  <sapn class="desc_price">Bảng giá thuê sân</sapn>
+                                  <ul class="desc__tienich">
+                                      <li>Tùy vào mỗi khung giờ khác nhau mà giá thuê sân ở đây giao động từ150.000đ - 350.000đ/trận</li>
+                                  </ul>
+                                  <span class="detail_desc_us">Về chúng tôi</span>
+                              <span class="detail_desc_us__title">Thế Giới Thể Thao là đơn vị đi đầu trong việc đem đến giải pháp toàn diện cho sân bóng đá, bao gồm: thi công sân cỏ nhân tạo, hợp tác đầu tư sân và dịch vụ vận hành sân bóng đá chuyên nghiệp. Chúng tôi cũng cung cấp: Quả bóng đá, giày bóng đá, trang phục và thiết bị thể thao.... đến tận tay người tiêu dùng.</span>
+                              </div>
+                              <div class="detail_desc_right">
+                                <span class="detail_desc_right__title">Địa chỉ Sân bóng CLB Bóng Đá Quang Tuyến</span>
+                                <ul class="detail_desc__address">
+                                    <li>Địa chỉ: 73 Phan Huy Ích, Phường 12, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</li>
+                                    <li>Liên hệ đặt sân: Điện thoại: 0858.658.899</li>
+                                </ul>
+                                <span class="detail_desc__map">Bản đồ chỉ đường đến sân bóng</span>
+                                <div class="detail_map" style="width: 100%;">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5115470083747!2d106.78350311494195!3d10.848642760822685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752713216a3adf%3A0xf8b22853eea72777!2zOTcgxJAuIE1hbiBUaGnhu4duLCBIaeG7h3AgUGjDuiwgUXXhuq1uIDksIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1655012634297!5m2!1svi!2s" 
+                                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                
+                            </div>
+                          </div>
                         </div>
-                        <a href="" class="detail_intro">
-                            <span class="detail_intro__title">Giới thiệu</span>
-                        </a>
+                        
+                    </div>
+                    <div class="detail_rating">
+                        <span class="detail_rating__title">Đánh giá Sân bóng CLB Bóng Đá Quang Tuyến</span>
+                        <span class="detail_rating_title_desc">Có 0 đánh giá về Sân bóng CLB Bóng Đá Quang Tuyến</span>
+                        <div style="min-height: 100%; border:0.2px solid #ffffff;"></div>
+
+                            <div class="detail__rating__right">
+                                <p class="title">Over view: 3&nbsp;<i class='bx bxs-star'></i></p>
+
+                                <div class="histo" id="histo">
+                                <div class="five histo-rate">
+                                    <span class="histo-star">
+                                    5 sao
+                                    </span>
+                                    <span class="bar-block">
+                                    <span id="bar-five" class="bar" count="">
+                                        &nbsp;
+                                    </span>
+                                    </span>
+                                </div>
+
+                                <div class="four histo-rate">
+                                    <span class="histo-star">
+                                    4 sao
+                                    </span>
+                                    <span class="bar-block">
+                                    <span id="bar-four" class="bar" count="">
+                                        &nbsp;
+                                    </span>
+                                    </span>
+                                </div>
+
+                                <div class="three histo-rate">
+                                    <span class="histo-star">
+                                    3 sao</span>
+                                    <span class="bar-block">
+                                    <span id="bar-three" class="bar" count="">
+                                        &nbsp;
+                                    </span>
+                                    </span>
+                                </div>
+
+                                <div class="two histo-rate">
+                                    <span class="histo-star">
+                                    2 sao</span>
+                                    <span class="bar-block">
+                                    <span id="bar-two" class="bar" count="">
+                                        &nbsp;
+                                    </span>
+                                    </span>
+                                </div>
+
+                                <div class="one histo-rate">
+                                    <span class="histo-star">
+                                    1 sao</span>
+                                    <span class="bar-block">
+                                    <span id="bar-one" class="bar" count="">
+                                        &nbsp;
+                                    </span>
+                                    </span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="review_comment">
+                              <div class="review_comment">
+                                <div class="review__avt__user__left">
+                                  <img src="https://picsum.photos/id/237/200/300" alt="avatar user">
+                                </div>
+                                <div class="review__avt__user__right">
+                                  <div class="user__right__top">
+                                    <p>Tên</p>
+                                    <p>Ngày giờ bình luận</p>
+                                    <div class="like__dislike" style="font-size: 17px;">
+                                    <i class='bx bxs-like'></i> 
+                                    <span class="count-cmt">1</span>
+                                    <i class='bx bxs-dislike'></i>
+                                    <span class="dis-cmt">Không thích</span>
+                                    </div>
+                                  </div>
+                                  <div class="user__right__bottom">
+                                    <div class="star" starcomment="">
+                                      <span><i class='bx bx-star'></i></span>
+                                      <span><i class='bx bx-star'></i></span>
+                                      <span><i class='bx bx-star'></i></span>
+                                      <span><i class='bx bx-star'></i></span>
+                                      <span><i class='bx bx-star'></i></span>
+                                      </div>
+                                      <p>nội dung comment</p>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <div id="comment__user">
+                                <h2 class="title__comment__user">Viết bình luận của bạn...</h2>
+                                <div class="star__verify">
+                                  <div class="star">
+                                      <i class='bx bx-star com'></i>
+                                      <i class='bx bx-star com'></i>
+                                      <i class='bx bx-star com'></i>
+                                      <i class='bx bx-star com'></i>
+                                      <i class='bx bx-star com'></i>
+                                  </div>
+                                  <hr class='line'>
+                                  <form action="" id='formComment'>
+                                    <textarea name="comment" id="textarea__review" cols="30" rows="10" placeholder='Viết bình luận của bạn ...'></textarea>
+                                    <input type="number" name="rating" id="count__star" value="" hidden>
+                                    <button id="sm_cmt" class="submit__review">Gửi</button>
+                                  </form>
+                            </div>
+                            </div>
                     </div>
                 </div>
+                
             </div>
         </div>
         <!-- footer -->
@@ -232,38 +401,61 @@
  <!-- Swiper JS -->
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.17/sweetalert2.min.js" integrity="sha512-Kyb4n9EVHqUml4QZsvtNk6NDNGO3+Ta1757DSJqpxe7uJlHX1dgpQ6Sk77OGoYA4zl7QXcOK1AlWf8P61lSLfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
  <script>
+// show giới thiệu
+const icon__show = document.getElementById("icon__show");
+const viewall__buynow = document.getElementsByClassName("viewall__buynow")[0];
+let isShow = true;
+icon__show.addEventListener("click",function(){
+  isShow = !isShow;
+  if(isShow){
+    viewall__buynow.classList.add("show__viewall__buynow");
+    icon__show.classList.add("rotate_icon");
+  }else {
+    viewall__buynow.classList.remove("show__viewall__buynow");
+    icon__show.classList.remove("rotate_icon");
+  }
+})
 
-    //  swiper
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 60,
-      slidesPerView: 3,
-      effect: 'coverflow',
-      freeMode: true,
-      centeredSlides: true,
-      watchSlidesProgress: true,
-      coverflowEffect: {
-        rotate: -10,
-        stretch: 20,
-        depth: 40,
-        },
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      loop: true,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
-      },
-    });
+// 5 star
+const total = parseInt(document.getElementById('bar-five').getAttribute('count')) + parseInt(document.getElementById(
+      'bar-four').getAttribute('count')) + parseInt(document.getElementById('bar-three').getAttribute('count')) +
+    parseInt(document.getElementById('bar-two').getAttribute('count')) + parseInt(document.getElementById('bar-one')
+      .getAttribute('count'));
 
-    swiper2.controller.control = sliderTwo;
-    swiper.controller.control = sliderOne;
+
+  const five = 80;
+  const four = (document.getElementById('bar-four').getAttribute('count') * 100) / total;
+  const three = (document.getElementById('bar-three').getAttribute('count') * 100) / total;
+  const two = (document.getElementById('bar-two').getAttribute('count') * 100) / total;
+  const one = (document.getElementById('bar-one').getAttribute('count') * 100) / total;
+
+  $(document).ready(function() {
+    $('.bar span').hide();
+    $('#bar-five').animate({
+      width: five + '%'
+    }, 1000);
+    $('#bar-four').animate({
+      width: four + '%'
+    }, 1000);
+    $('#bar-three').animate({
+      width: three + '%'
+    }, 1000);
+    $('#bar-two').animate({
+      width: two + '%'
+    }, 1000);
+    $('#bar-one').animate({
+      width: one + '%'
+    }, 1000);
+
+    setTimeout(function() {
+      $('.bar span').fadeIn('slow');
+    }, 1000);
+
+  });
+    
 
     // hết swiper
     // rating star
@@ -282,5 +474,316 @@
     }
 
 // hếtrating star
-  </script>
+
+
+
+
+  //Event hover star
+  const data_total_user_comment = document.getElementsByClassName('com');
+  let check = false;
+  for (let i = 0; i < data_total_user_comment.length; i++) {
+    data_total_user_comment[i].addEventListener("mouseover", function(event) {
+      for (let j = 0; j < data_total_user_comment.length; j++) {
+        if (j > i) {
+          if (data_total_user_comment[j].classList.contains('bxs-star')) {
+            data_total_user_comment[j].classList.remove('bxs-star')
+          }
+        } else {
+          data_total_user_comment[j].classList.add('bxs-star')
+        }
+      }
+      data_total_user_comment[i].classList.add('bxs-star');
+      idStar = i;
+      document.getElementById('count__star').value = idStar + 1;
+    })}
+
+    var idStar = 0;
+    for (let i = 0; i < data_total_user_comment.length; i++) {
+      data_total_user_comment[i].addEventListener("click", function(event) {
+        idStar = i;
+        document.getElementById('count__star').value = idStar + 1;
+      })
+    }
+
+    
+$(document).ready(function() {
+
+
+// Submit comment
+$('#sm_cmt').on('click', function(e) {
+  e.preventDefault();
+  var $this = $(this);
+  $this.attr('disabled', 'disabled').html("Loading...");
+  $.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+  });
+  $.ajax({
+    type: 'post',
+    url: `{{route('app.detail.comment.ajax', ['slug'=>$data['app']['slug']] )}}`,
+    data: $('#formComment').serialize(),
+    success: function(res) {
+      if (res.status === 200) {
+        Swal.fire({
+          title: "Success",
+          imageUrl: `{{ asset('/images/alert/bell__success.png') }}`,
+          imageWidth: 100,
+          imageHeight: 100,
+          imageAlt: 'Message',
+        }).then((result) => {
+          if (result.isConfirmed) {
+            $this.removeAttr('disabled').html("gửi");
+            window.location.reload();
+          }
+        })
+      } else {
+        if (res.error) {
+          $this.removeAttr('disabled').html("gửi");
+          return  Swal.fire({
+          title: res.error,
+          imageUrl: `{{/images/alert/bell.png') }}`,
+          imageWidth: 100,
+          imageHeight: 100,
+          imageAlt: 'Message',
+        })
+        } else if (res.errors) {
+          $this.removeAttr('disabled').html("{{__('web.send')}}");
+          return Swal.fire({
+            imageUrl: `{{/images/alert/bell.png') }}`,
+            imageWidth: 100,
+            imageHeight: 100,
+            imageAlt: 'Message',
+            text: "Error",
+            html: '<span></span>',
+            willOpen: () => {
+              let b = Swal.getHtmlContainer().querySelector(
+                'span')
+              res.errors.map((item) => {
+                b.textContent = item
+              })
+            }
+          })
+        }
+        Swal.fire({
+          imageUrl: `{{/images/alert/bell.png') }}`,
+          imageWidth: 100,
+          imageHeight: 100,
+          imageAlt: 'Message',
+          text: "An unknown error !",
+        })
+        $this.removeAttr('disabled').html("gửi");
+      }
+    }
+  });
+});
+});
+
+// Like and dislike
+$('.bx.bxs-like').on('click', function(event) {
+    var cmt_id = event.target.getAttribute('cmt-id');
+    if (event.target.getAttribute('active') != 'true') {
+      $(event.target).css('color', 'red');
+      event.target.setAttribute('active', 'true');
+      $(event.target).parent('.like__dislike').find('.bx.bxs-dislike').removeAttr("active")
+      $(event.target).parent('.like__dislike').find('.bx.bxs-dislike').css('color', 'whitesmoke');
+    } else {
+      event.target.setAttribute('active', 'false');
+      $(event.target).css('color', 'whitesmoke');
+      $(event.target).parent('.like__dislike').find('.bx.bxs-dislike').css('color', 'whitesmoke');
+    }
+    // if (event.target.getAttribute('active') != 'true') {
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+    $.ajax({
+      type: 'POST',
+      url: `{{route('app.approve.up')}}`,
+      data: {
+        cmt_id: cmt_id
+      },
+      dataType: 'JSON',
+      success: function(response) {
+        if (response.status == 200) {
+          if (response.data) {
+            $(event.target).parent('.like__dislike').find('.dis-cmt').text(response.data.dislike);
+            $(event.target).parent('.like__dislike').find('.count-cmt').text(response.data.approval);
+          }
+
+          return Swal.fire({
+            imageUrl: `{{ asset('/images/alert/bell__success.png') }}`,
+            imageWidth: 100,
+            imageHeight: 100,
+            imageAlt: 'Message',
+            title: response.success,
+          })
+        } else {
+          if (response.status == 400) {
+            return Swal.fire({
+              imageUrl: `{{ asset('/images/alert/bell.png') }}`,
+              imageWidth: 100,
+              imageHeight: 100,
+              imageAlt: 'Message',
+              title: response.error,
+            })
+          } else if (response.status == 401) {
+            return Swal.fire({
+              imageUrl: `{{ asset('/images/alert/bell.png') }}`,
+              imageWidth: 100,
+              imageHeight: 100,
+              imageAlt: 'Message',
+              title: response.error,
+            }).then((result) => {
+              if (result.isConfirmed) {
+                window.location.href = response.route;
+              }
+            });
+          } else {
+            if (response.status == -9000) {
+              return Swal.fire({
+                imageUrl: `{{ asset('/images/alert/bell.png') }}`,
+              imageWidth: 100,
+              imageHeight: 100,
+              imageAlt: 'Message',
+              title: response.error,
+              })
+            } else {
+              if (response.status == -9999) {
+                return Swal.fire({
+                  imageUrl: `{{ asset('/images/alert/bell.png') }}`,
+                  imageWidth: 100,
+                  imageHeight: 100,
+                  imageAlt: 'Message',
+                  title: response.error,
+                })
+              }
+            }
+          }
+        }
+
+      }
+    });
+    return;
+  });
+
+  $('.bx.bxs-dislike').on('click', function(event) {
+    var dis_id = event.target.getAttribute('dis-id');
+
+    if (event.target.getAttribute('active') != 'true') {
+      $(event.target).css('color', 'red');
+      event.target.setAttribute('active', 'true');
+      $(event.target).parent('.like__dislike').find('.bx.bxs-like').removeAttr("active");
+      $(event.target).parent('.like__dislike').find('.bx.bxs-like').css('color', 'whitesmoke');
+    } else {
+      event.target.setAttribute('active', 'false');
+      $(event.target).css('color', 'whitesmoke');
+      $(event.target).parent('.like__dislike').find('.bx.bxs-like').css('color', 'whitesmoke');
+    }
+
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+    $.ajax({
+      type: 'POST',
+      url: `{{route('app.dislike.up')}}`,
+      data: {
+        dis_id: dis_id
+      },
+      dataType: 'JSON',
+      success: function(response) {
+        if (response.status == 200) {
+          if (response.data) {
+            $(event.target).parent('.like__dislike').find('.dis-cmt').text(response.data.dislike);
+            $(event.target).parent('.like__dislike').find('.count-cmt').text(response.data.approval);
+          }
+
+          return Swal.fire({
+            imageUrl: `{{ asset('/images/alert/bell__success.png') }}`,
+            imageWidth: 100,
+            imageHeight: 100,
+            imageAlt: 'Message',
+            title: response.success,
+          })
+        } else {
+          if (response.status == 400) {
+            return Swal.fire({
+              imageUrl: `{{ asset('/images/alert/bell.png') }}`,
+                  imageWidth: 100,
+                  imageHeight: 100,
+                  imageAlt: 'Message',
+                  title: response.error,
+            })
+          } else if (response.status == 401) {
+            return Swal.fire({
+              imageUrl: `{{ asset('/images/alert/bell.png') }}`,
+                  imageWidth: 100,
+                  imageHeight: 100,
+                  imageAlt: 'Message',
+                  title: response.error,
+            }).then((result) => {
+              if (result.isConfirmed) {
+                window.location.href = response.route;
+              }
+            });
+          } else {
+            if (response.status == -9000) {
+              return Swal.fire({
+                imageUrl: `{{ asset('/images/alert/bell.png') }}`,
+                  imageWidth: 100,
+                  imageHeight: 100,
+                  imageAlt: 'Message',
+                  title: response.error,
+              })
+            } else {
+              if (response.status == -9999) {
+                return Swal.fire({
+                  imageUrl: `{{ asset('/images/alert/bell.png') }}`,
+                  imageWidth: 100,
+                  imageHeight: 100,
+                  imageAlt: 'Message',
+                  title: response.error,
+                })
+              }
+            }
+          }
+        }
+      }
+    });
+    return;
+  });
+
+  //  swiper
+  var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 60,
+      slidesPerView: 3,
+      effect: 'coverflow',
+      freeMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      centeredSlides: true,
+      watchSlidesProgress: true,
+      coverflowEffect: {
+        rotate: -10,
+        stretch: 20,
+        depth: 40,
+        },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+
+    swiper2.controller.control = sliderTwo;
+    swiper.controller.control = sliderOne;
+</script>
 </html>
